@@ -1,0 +1,122 @@
+/* Define fonts */
+root {
+    --poppins: "Poppins", sans-serif;
+  }
+  
+  /* Common styles */
+  .common-padding {
+    padding: 10px 20px;
+  }
+  
+  .common-margin {
+    margin: 10px;
+  }
+  
+  /* Global styles */
+  * {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+  }
+  
+  /* Header section */
+  .header-section-wrapper {
+    background-image: url("/images/background.png");
+    background-position: center top;
+    background-size: cover;
+    min-height: 120vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+  }
+  
+  /* Navigation bar */
+  .nav-bar {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .navbar ul {
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    font-family: var(--poppins); 
+    font-weight: 550;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  .navbar ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #595959;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+  
+  /* Call to action section */
+  #mainheading {
+    font-size: 92px;
+    position: relative;
+    margin-right: auto;
+    padding: 1.2em;
+    color: white;
+    font-family: var(--poppins); 
+  }
+  
+  .call-to-action {
+    text-align: center;
+    color: white;
+  }
+  
+  .common-text {
+    font-family: var(--poppins); 
+  }
+  
+  span {
+    position: relative;
+    top: -100px;
+    right: -100px;
+    margin-left: auto;
+    margin-right: 15px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: 560;
+  }
+  
+  .register-btn {
+
+    display: inline-block;
+    color: white;
+    background-color: #b244ea;
+    font-size: 10px;
+    position: relative;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    top: -50px;
+    right: 120px;
+    border: 0px solid black; /* Thin gray border */
+    box-shadow: 2px 2px 5
+  
+  }
+    
