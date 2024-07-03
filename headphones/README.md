@@ -1,0 +1,1 @@
+In this project, I will implement a web page from scratch, without using any libraries. I will utilize all the HTML, CSS, accessibility, and responsive design knowledge I've learned in the past week.
