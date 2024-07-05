@@ -1,120 +1,389 @@
-/* Define fonts */
-root {
-    --poppins: "Poppins", sans-serif;
+:root{
+    --white:#FFFFFF;
+    --red:#FF6565;
+    --blue:#071629;
+    --dark gray:#979797;
+    font-family: "Source Sans 3", sans-serif;
+    
+}
+/*...........................................General Style.........................................*/
+*,*::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-family: "Source Sans 3", sans-serif;
+}
+.hero_section{
+    background-image: url(/assets/headphones_hero_1.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: sans pro;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+   
+  }
+  nav li{
+    margin-right: 20px;
+  }
+  nav a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Source Sans 3", sans-serif;
+  }
+.heading-centred{
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    font-family: "Source Sans 3", sans-serif;
+}
+.cta-button{
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+
+}
+         
+.article-p{
+    text-align: center;
+    color: var(--white);
+    font-family: "Source Sans 3", sans-serif;
+  
+}
+.h4-centred{
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    font-family: "Source Sans 3", sans-serif;
+  
+}
+  .hamburger {
+    display: none; 
   }
   
-  /* Common styles */
-  .common-padding {
-    padding: 10px 20px;
-  }
+  /
+  @media (max-width: 480px) {
+    .hamburger {
+       display: block; 
+     }
+    .hamburger span {
+       background-color: #fff; 
+       height: 2px;
+       width: 20px;
+       display: block;
+       margin: 4px auto;
+     }
+    .hamburger span:first-child {
+       margin-top: 0;
+     }
+    .hamburger span:last-child {
+       margin-bottom: 0;
+     }
+   }
   
-  .common-margin {
+  .whatwedo{
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+  }
+  .heading2-centred{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+  }
+  .sound_frequency{
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+  }
+  .video_{
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+  }
+  .music_{
+text-align: center;
+font-family: "Source Sans 3", sans-serif;
+  }
+  .hearing_{
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+  }
+  .speak_{
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+  }
+  .pentagon {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    position: relative;
+    display: inline-block;
     margin: 10px;
   }
   
-  /* Global styles */
-  * {
-    margin: 0;
-    padding: 0;
-    font-style: normal;
+  .pentagon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 0 25px 43.3px 25px;
+    border-style: solid;
+    border-color: transparent transparent #ccc transparent;
+    width: 0;
+    height: 0;
   }
   
-  /* Header section */
-  .header-section-wrapper {
-    background-image: url("/images/background.png");
-    background-position: center top;
-    background-size: cover;
-    min-height: 120vh;
+  .pentagon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 43.3px 25px 0 25px;
+    border-style: solid;
+    border-color: #ccc transparent transparent transparent;
+    width: 0;
+    height: 0;
+  }
+  .formmain button {
+    background-color: red;
+    color: var(--red);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  .formmain {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formmain h4 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .formmain label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .formmain input[type="text"], .formmain input[type="email"] {
     width: 100%;
-    overflow: hidden;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
   }
   
-  .header {
-    display: flex; 
+  .formmain textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  .formmain button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .formmain button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .formmain section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  footer {
+    background-color: #071629;
+    padding: 20px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 6%;
+    color: #fff;
   }
   
-  /* Navigation bar */
-  .nav-bar {
-    flex: 1;
-    text-align: right;
+  footer img {
+    height: 40px;
+    margin-right: 20px;
   }
   
-  .navbar ul {
-    list-style: none;
-  }
-  
-  .navbar ul li {
-    display: inline-block;
-    font-family: var(--poppins); 
-    font-weight: 550;
-  }
-  
-  .navbar ul li a {
-    color: white;
+  footer a {
+    color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    margin-left: 20px;
   }
   
-  .navbar ul li::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #595959;
-    display: block;
-    margin: auto;
+  footer a:hover {
+    color: #ccc;
+  }
+  
+  footer ion-icon {
+    font-size: 24px;
+  }
+  
+  footer p {
+    margin-top: 0;
+    font-size: 14px;
+    font-family: "Source Sans 3", sans-serif;
+    
+  }
+  /* Scaling animation on hover */
+.whatwedo:hover {
+    transform: scale(1.1);
     transition: 0.5s;
   }
   
-  .navbar ul li:hover::after {
-    width: 100%;
+  /* Opacity animation on hover */
+  .right-column:hover {
+    opacity: 0.5;
+    transition: 0.5s;
   }
   
-  /* Call to action section */
-  #mainheading {
-    font-size: 92px;
-    position: relative;
-    margin-right: auto;
-    padding: 1.2em;
-    color: white;
-    font-family: var(--poppins); 
+  /* Rotation animation on hover */
+  .heading2-centred:hover {
+    transform: rotate(10deg);
+    transition: 0.5s;
   }
   
-  .call-to-action {
-    text-align: center;
-    color: white;
+  /* Bouncing animation on hover */
+  .whatwedo {
+    animation: bounce 2s infinite;
   }
   
-  .common-text {
-    font-family: var(--poppins); 
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
   
-  span {
-    position: relative;
-    top: -100px;
-    right: -100px;
-    margin-left: auto;
-    margin-right: 15px;
-    padding-left: 30px;
-    font-size: 12px;
-    font-weight: 560;
+  /* Animations that run all the time */
+  .right-column {
+    animation: spin 5s linear infinite;
   }
   
-  .register-btn {
-    display: inline-block;
-    color: white;
-    background-color: #b244ea;
-    font-size: 10px;
-    position: relative;
-    border-radius: 20px;
-    width: 150px;
-    height: 40px;
-    position: relative;
-    top: -50px;
-    right: 120px;
-    border: 0px solid black; /* Thin gray border */
-    box-shadow: 2px 2px 5
-  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
+
+  /* Animations that run all the time */
+.speak_ {
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .pentagons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .pentagon {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    margin: 10px;
+    animation: spin 5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Animations on hover */
+  .speak_ .container p:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
+  
+  .speak_ .container article:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+  
+  .speak_ .pentagons .pentagon:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+  }
+  
+/*...........................................Container Style........................................*/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .container-2{
+    max-width: 1000px;
+    margin: 0 auto;  
+}
+/*............................................Image Style..........................................*/
+.logo img{
+    width: 100px;
+    height: 50px;
+    
+}
+
+
