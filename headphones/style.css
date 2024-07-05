@@ -53,22 +53,20 @@ nav ul {
     font-family: "Source Sans 3", sans-serif;
 }
 .cta-button{
-        background-color: red;
-        color: white;
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-        padding: 10px 20px; 
-        border: none; 
-        border-radius: 20px; 
-        cursor: pointer; 
-        font-family: "Source Sans 3", sans-serif;
-        font-weight: bold;
-      
+    background-color: red;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+
 }
-.cta-button{
-    opacity: 0.9;
-}
+         
 .article-p{
     text-align: center;
     color: var(--white);
@@ -88,23 +86,23 @@ nav ul {
   
   /
   @media (max-width: 480px) {
-   .hamburger {
-      display: block; 
-    }
-   .hamburger span {
-      background-color: #fff; 
-      height: 2px;
-      width: 20px;
-      display: block;
-      margin: 4px auto;
-    }
-   .hamburger span:first-child {
-      margin-top: 0;
-    }
-   .hamburger span:last-child {
-      margin-bottom: 0;
-    }
-  }
+    .hamburger {
+       display: block; 
+     }
+    .hamburger span {
+       background-color: #fff; 
+       height: 2px;
+       width: 20px;
+       display: block;
+       margin: 4px auto;
+     }
+    .hamburger span:first-child {
+       margin-top: 0;
+     }
+    .hamburger span:last-child {
+       margin-bottom: 0;
+     }
+   }
   
   .whatwedo{
     text-align: center;
@@ -129,6 +127,9 @@ font-family: "Source Sans 3", sans-serif;
   .hearing_{
     text-align: center;
     font-family: "Source Sans 3", sans-serif;
+  }
+  .speak_{
+    text-align: center;
   }
 /*...........................................Container Style........................................*/
 .container {
