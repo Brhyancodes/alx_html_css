@@ -132,14 +132,41 @@ font-family: "Source Sans 3", sans-serif;
     text-align: center;
     font-family: "Source Sans 3", sans-serif;
   }
-  .formmain{
-    text-align: center;
-    font-family: "Source Sans 3", sans-serif;
-    
+  .pentagon {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  .pentagon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 0 25px 43.3px 25px;
+    border-style: solid;
+    border-color: transparent transparent #ccc transparent;
+    width: 0;
+    height: 0;
+  }
+  
+  .pentagon:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 43.3px 25px 0 25px;
+    border-style: solid;
+    border-color: #ccc transparent transparent transparent;
+    width: 0;
+    height: 0;
   }
   .formmain button {
     background-color: red;
-    color: white;
+    color: var(--red);
     border: none;
     border-radius: 20px;
     cursor: pointer;
