@@ -66,6 +66,9 @@ nav ul {
         font-weight: bold;
       
 }
+.cta-button{
+    opacity: 0.9;
+}
 .article-p{
     text-align: center;
     color: var(--white);
@@ -79,16 +82,6 @@ nav ul {
     font-family: "Source Sans 3", sans-serif;
   
 }
-
-.logo img{
-    width: 100px;
-    height: 50px;
-    
-}
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
   .hamburger {
     display: none; 
   }
@@ -112,6 +105,45 @@ nav ul {
       margin-bottom: 0;
     }
   }
+  
+  .whatwedo{
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+  }
+  .heading2-centred{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: bold;
+  }
+  .sound_frequency{
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+  }
+  .video_{
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+  }
+  .music_{
+text-align: center;
+font-family: "Source Sans 3", sans-serif;
+  }
+  .hearing_{
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+  }
 /*...........................................Container Style........................................*/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .container-2{
+    max-width: 1000px;
+    margin: 0 auto;  
+}
 /*............................................Image Style..........................................*/
+.logo img{
+    width: 100px;
+    height: 50px;
+    
+}
+
 
