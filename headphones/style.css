@@ -1,0 +1,117 @@
+:root{
+    --white:#FFFFFF;
+    --red:#FF6565;
+    --blue:#071629;
+    --dark gray:#979797;
+    font-family: "Source Sans 3", sans-serif;
+    
+}
+/*...........................................General Style.........................................*/
+*,*::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-family: "Source Sans 3", sans-serif;
+}
+.hero_section{
+    background-image: url(/assets/headphones_hero_1.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: sans pro;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+   
+  }
+  nav li{
+    margin-right: 20px;
+  }
+  nav a{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Source Sans 3", sans-serif;
+  }
+.heading-centred{
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    font-family: "Source Sans 3", sans-serif;
+}
+.cta-button{
+        background-color: red;
+        color: white;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px; 
+        border: none; 
+        border-radius: 20px; 
+        cursor: pointer; 
+        font-family: "Source Sans 3", sans-serif;
+        font-weight: bold;
+      
+}
+.article-p{
+    text-align: center;
+    color: var(--white);
+    font-family: "Source Sans 3", sans-serif;
+  
+}
+.h4-centred{
+    font-weight: bold;
+    text-align: center;
+    color: var(--white);
+    font-family: "Source Sans 3", sans-serif;
+  
+}
+
+.logo img{
+    width: 100px;
+    height: 50px;
+    
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .hamburger {
+    display: none; 
+  }
+  
+  /
+  @media (max-width: 480px) {
+   .hamburger {
+      display: block; 
+    }
+   .hamburger span {
+      background-color: #fff; 
+      height: 2px;
+      width: 20px;
+      display: block;
+      margin: 4px auto;
+    }
+   .hamburger span:first-child {
+      margin-top: 0;
+    }
+   .hamburger span:last-child {
+      margin-bottom: 0;
+    }
+  }
+/*...........................................Container Style........................................*/
+/*............................................Image Style..........................................*/
+
